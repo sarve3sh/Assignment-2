@@ -1,0 +1,74 @@
+/* 1. Global Setup */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(9, 45, 121); /* Keeping your blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* 2. The Card Container */
+  /* Adding a container feel around your elements */
+  main, .container { 
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* 3. Typography */
+  h1 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* 4. Form Layout */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between rows */
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #555;
+    font-size: 0.9rem;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  input:focus {
+    outline: 2px solid rgb(0, 78, 247);
+    border-color: transparent;
+  }
+  
+  /* 5. The Solve Button */
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
