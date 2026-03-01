@@ -1,8 +1,11 @@
 import '../style.css'
-/*three distinct real roots
-one real root and two complex roots
-one real root with a double root or a triple root*/
 
-/*Case A [Cardono's (1)+cube root of unity (2)]
-Case B [Cardono's+cube roots of unity(2)]
-Case C [Cardono's once]*/
+const valuea = document.getElementById('valuea') as HTMLInputElement;
+const valueb = document.getElementById('valueb') as HTMLInputElement;
+const valuec = document.getElementById('valuec') as HTMLInputElement;
+const valued = document.getElementById('valued') as HTMLInputElement;
+
+const button = document.querySelector('button') as HTMLButtonElement;
+button.addEventListener('click', () => {
+const a = parseFloat(valuea.value);
+})
