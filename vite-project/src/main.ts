@@ -14,6 +14,17 @@ const d = parseFloat(valued. value);
 });
 
 function solveCubic(a: number, b: number, c: number, d: number): number[]{
-    //cardono's method and smth else.
+    const p = ((3*a*c-b**2)/(3*a**2))
+    const q = ((27*a**2*d-9*a*b*c+2*b**3)/(27*a**3))
+    const discriminant = (q/2)**2 + (p/3)**2
+    if (discriminant>0){
+        //case a
+    }
+    else if (discriminant==0){
+        //case b
+    }
+    else if (discriminant<0){
+        //case c
+    }
     return [];
 }
