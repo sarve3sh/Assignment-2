@@ -18,16 +18,14 @@ button.addEventListener('click', (event) => {
     const result = solveCubic(a, b, c, d);
     formula.innerText = `${a}x³ + ${b}x² + ${c}x + ${d} = 0`
     result_table.innerHTML =`
-    <table>
-        <tr><td>p</td><td>${result.p}</td></tr>
-        <tr><td>q</td><td>${result.q}</td></tr>
-        <tr><td>Discriminant</td><td>${result.discriminant}</td></tr>
-        <tr><td>Root 1</td><td>${result.roots[0]}</td></tr>
-        <tr><td>Root 2</td><td>${result.roots[1]}</td></tr>
-        <tr><td>Root 3</td><td>${result.roots[2]}</td></tr>
+   <table>
         <tr><td>p</td><td>${result.p.toFixed(5)}</td></tr>
         <tr><td>q</td><td>${result.q.toFixed(5)}</td></tr>
         <tr><td>Discriminant</td><td>${result.discriminant.toFixed(5)}</td></tr>
+        <tr><td>Value</td><td>x</td><td>y</td></tr>
+        <tr><td>Root 1</td><td>${typeof result.roots[0] === 'number' ? (result.roots[0] as number).toFixed(2) : result.roots[0]}</td><td>${typeof result.roots[0] === 'number' ? '0' : ''}</td></tr>
+        <tr><td>Root 2</td><td>${typeof result.roots[1] === 'number' ? (result.roots[1] as number).toFixed(2) : result.roots[1]}</td><td>${typeof result.roots[1] === 'number' ? '0' : ''}</td></tr>
+        <tr><td>Root 3</td><td>${typeof result.roots[2] === 'number' ? (result.roots[2] as number).toFixed(2) : result.roots[2]}</td><td>${typeof result.roots[2] === 'number' ? '0' : ''}</td></tr>
     </table>`
   
 ctx.clearRect(0, 0, canvas.width, canvas.height)
