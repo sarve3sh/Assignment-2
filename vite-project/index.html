@@ -20,10 +20,15 @@
     <label for="valued">Value D:</label>
     <input type="number" id="valued" name="valued">
     <button>Solve</button>
-    <p id="result"></p>
-    <script type="module" src="/src/main.ts"></script>
   </form>
 
+<div id="layout">
+  <div id="result-table"></div>
+  <div id="graph-container">
+  <p id="formula"></p>
+  <canvas id="graph" width="1000" height="620"> </canvas>
+  </div>
+</div>
+ <script type="module" src="/src/main.ts"></script>
 </body>
-
 </html>

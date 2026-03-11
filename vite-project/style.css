@@ -1,10 +1,6 @@
-/* Exo thin font from Google. */
-@import url(https://fonts.googleapis.com/css?family=Exo:100,400);
 
 :root {
-  --bg-url: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
-  --bg-size: 30px;
-  --orange: #f90;
+  --orange: rgb(0, 142, 61);
 }
 
 body {
@@ -26,17 +22,16 @@ h1 {
   margin: 0 0 1.5rem 0;
 }
 
-/* Top bar: inputs + button in one row */
+
 form {
   background: rgba(255, 255, 255, 0.92);
   padding: 1.2rem 2rem;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   display: flex;
-  flex-direction: row;      /* horizontal! */
+  flex-direction: row;      
   align-items: flex-end;
   gap: 1.2rem;
-  flex-wrap: wrap;          /* wraps on small screens */
 }
 
 .input-group {
@@ -75,13 +70,7 @@ button {
   white-space: nowrap;
 }
 
-button:hover {
-  background-color: #e08800;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
 
-/* Results table */
 #result-table {
   background: rgba(255,255,255,0.92);
   border-radius: 10px;
@@ -106,6 +95,13 @@ button:hover {
   text-align: left;
   color: #555;
 }
+#layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
 
 #result-table .header-row td {
   background: var(--orange);
@@ -114,7 +110,7 @@ button:hover {
   text-align: center;
 }
 
-/* Graph canvas */
+
 #graph {
   margin-top: 1.5rem;
   background: rgba(255,255,255,0.92);
